@@ -4,10 +4,10 @@ from google import genai
 import os
 
 # Configuración de la página de Streamlit
-st.set_page_config(page_title="Extractor de Datos Clínicos", page_icon="🩺", layout="centered")
+st.set_page_config(page_title="Extractor de Exámenes de Laboratorio", page_icon="🩺", layout="centered")
 
-st.title("🩺 Extractor de Exámenes Clínicos")
-st.write("Sube el PDF del laboratorio para obtener los resultados en un formato estructurado listo para copiar.")
+st.title("🩺 Extractor de Exámenes de Laboratorio")
+st.write("Sube un PDF del cualquier laboratorio clínico para obtener los resultados en un formato estructurado listo para copiar.")
 
 # --- CONFIGURACIÓN DE LA API KEY (AHORA VISIBLE DE INMEDIATO) ---
 api_key = st.text_input(
@@ -23,7 +23,8 @@ with st.expander("ℹ️ ¿No tienes una Clave de API o no sabes cómo usar la h
     
     1. **Entra a la plataforma:** Ingresa a [Google AI Studio](https://aistudio.google.com/) con cualquier cuenta de Gmail común.
     2. **Genera el código:** Haz clic en el botón de arriba a la izquierda que dice **"Crear clave de API"**. Se desplegará una ventana donde podrás dar un nombre a la clave y elegir proyecto. Selecciona **+ Crear proyecto.** Dale un nombre y luego selecciona **Crear clave.**
-    3. **Copia y pega:** Copia esa cadena larga de letras y números, y pégala en la casilla visible de arriba.	
+    3. **Copia y pega:** Copia esa cadena larga de letras y números, pégala en la casilla visible de arriba y da ENTER.
+    4. **Carga o arrastra** el documento en PDF y el procesamiento se hará automáticamente.
     """)
 
 # Definición del Prompt Maestro Optimizado
