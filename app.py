@@ -41,21 +41,24 @@ Estructura estricta del reporte principal:
 - Fecha: [Fecha]
 - Hba1c: [Valor]
 - Glic: [Valor]
-- Perfil lipídico: CT [Valor], cHDL [Valor], cLDL [Valor], Tg [Valor] (mantener asteriscos si corresponden)
+- P. lipídico: CT [Valor], cHDL [Valor], cLDL [Valor], Tg [Valor] (mantener asteriscos si corresponden)
 - Crea: [Valor], VFGe: [Valor] (incluir el método de cálculo que aparezca indexado, ej: MDRD o CKD-EPI)
 - RAC: [Valor]
 - BUN: [Valor], Urea: [Valor]
 - ELP: Na+ [X] mEq/L / K+ [Y] mEq/L / Cl- [Z] mEq/L
 - Ác. Úrico: [Valor]
+- P. Hepático: GOT/AST: [valor], GPT/ALT: [Valor], GGT: [Valor], B. Total: [Valor], B. Directa: [Valor], B. Indirecta: [Valor]
+- Albúmina:[Valor]
+- INR: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
-- Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "SO: Leuco, Hematíes, Químico nada especial".
+- Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "Orina completa normal".
 - TSH: [Valor], T4L: [Valor]
 
 Reglas críticas de transformación para el Hemograma:
 - Para GB y Plaq multiplica el valor base por 10^3 para mostrar el número completo y termínalo en /mm3 (Ej: si dice 7.01 con unidad x10^3, pon 7.010 /mm3; si dice 305, pon 305.000 /mm3). Si el valor original llevaba asterisco, mantlo (Ej: * 7.010 /mm3).
 
 REDE DE SEGURIDAD PARA EXÁMENES ADICIONALES:
-- Es OBLIGATORIO que revises si existen más exámenes en el texto que NO estén incluidos en la lista de arriba (por ejemplo: Frotis, Fórmula leucocitaria detallada, parámetros específicos de orina alterados, PCR, Troponinas, Vitaminas, Cinética de hierro, Pruebas de coagulación como TP/INR, etc.).
+- Es OBLIGATORIO que revises si existen más exámenes en el texto que NO estén incluidos en la lista de arriba (por ejemplo: Frotis, Fórmula leucocitaria detallada, parámetros específicos de orina alterados, PCR, Troponinas, Vitaminas, Cinética de hierro, Otroas Pruebas de coagulación como TP/% Actividad de Protrombina, etc.).
 - Si encuentras cualquiera de estos datos adicionales, agrégalos todos al final del reporte en una sección llamada "Otros exámenes:" detallando sus nombres, valores y unidades correspondientes, manteniendo también sus asteriscos si los tienen. Si no hay nada adicional, omite esta sección.
 
 Responde únicamente con el texto formateado, sin introducciones ni comentarios adicionales.
