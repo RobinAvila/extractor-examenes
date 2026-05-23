@@ -46,7 +46,7 @@ Estructura estricta del reporte principal:
 - RAC: [Valor]
 - BUN: [Valor], Urea: [Valor]
 - ELP: Na+ [X] mEq/L / K+ [Y] mEq/L / Cl- [Z] mEq/L
-- AU: [Valor]
+- Ác. Úrico: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
 - Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "SO: Leuco, Hematíes, Químico nada especial".
 - TSH: [Valor], T4L: [Valor]
