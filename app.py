@@ -52,7 +52,7 @@ Estructura estricta del reporte principal:
 - Albúmina:[Valor]
 - INR: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
-- Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "Orina completa normal".
+- Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "normal".
 - TSH: [Valor], T4L: [Valor]
 
 Reglas críticas de transformación para el Hemograma:
