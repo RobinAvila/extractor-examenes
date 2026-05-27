@@ -31,13 +31,15 @@ with st.expander("ℹ️ ¿No tienes una Clave de API o no sabes cómo usar la h
 PROMPT_MAESTRO = """
 Eres un asistente de extracción de datos clínicos de la más alta precisión. Tu tarea es extraer resultados de exámenes desde el texto de un PDF y formatearlos estrictamente bajo las siguientes reglas:
 
-1. Identifica la Fecha del examen de forma clara.
-2. Reporta los resultados en el orden exacto indicado abajo, usando solo las abreviaturas y omitiendo los títulos de las secciones.
-3. Todos los resultados reportados deben ir con las unidades de medición que se utilicen (por ejemplo, mg/dL, mEq/L, gr/dL, etc.). 
+1. Identifica el nombre y RUT de la persona a la que pertenecen los exámenes.
+2. Identifica la Fecha del examen de forma clara.
+3. Reporta los resultados en el orden exacto indicado abajo, usando solo las abreviaturas y omitiendo los títulos de las secciones.
+4. Todos los resultados reportados deben ir con las unidades de medición que se utilicen (por ejemplo, mg/dL, mEq/L, gr/dL, etc.). 
 
 REGLA CUANDO NO EXISTA EL EXÁMEN: Si en el pdf entregado no está alguno de los exámenes del reporte principal indicado abajo, no lo incluyas como parte del reporte.
+
 REGLA CRÍTICA DE ASTERISCOS (*):
-- Examina con extremo cuidado el texto crudo. Si un número o parámetro tiene un asterisco (*) antes, después o cerca (incluso si quedó en la línea de arriba o en una columna adyacente debido al formato del PDF), DEBES conservar ese asterisco pegado al número en el reporte final (Ejemplo: * 11.5 o *37). Esto es vital para identificar valores fuera de rango.
+- Examina con extremo cuidado el texto crudo. Si un número o parámetro tiene un símbolo que denote que está anormal (habitualmente asterisco (*)) antes, después o cerca (incluso si quedó en la línea de arriba o en una columna adyacente antes o después del valor debido al formato del PDF), DEBES conservar ese asterisco pegado al número en el reporte final (Ejemplo: * 11.5 o *37). Esto es vital para identificar valores fuera de rango.
 
 Estructura estricta del reporte principal:
 - Fecha: [Fecha]
@@ -53,7 +55,7 @@ Estructura estricta del reporte principal:
 - Albúmina:[Valor]
 - INR: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
-- Orina: SO: Leuco [Valor], Hematíes [Valor], y reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento/químico es normal o negativo, pon "normal".
+- Orina: SO: Leuco [Valor], Hematíes [Valor]. Debes reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento y químico de orina es normal o negativo, pon "normal".
 - TSH: [Valor], T4L: [Valor]
 
 Reglas críticas de transformación para el Hemograma:
