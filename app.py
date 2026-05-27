@@ -55,7 +55,7 @@ Estructura estricta del reporte principal:
 - Albúmina:[Valor]
 - INR: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
-- Orina: SO: Leuco [Valor], Hematíes [Valor]. Químico: [Debes reportar en esta sección el químico de orina solo si hay parámetros con resultados fuera del valor de referencia, de lo contrario escribe "normal"]. El valor de "Hematíes" y "Leucos" debes extraerlo siempre del Sedimento de Orina (corresponderá a hematíes o globulos rojos y leucocitos o glóbulos blancos, depende del laboratorio) para el reporte en esta sección. El resto del examen de orina (tanto químico como sedimento) deberías reportarlo abajo junto con los "otros exámenes".
+- Orina: SO: Leuco [Valor], Hematíes [Valor]. Químico: [Debes reportar en esta sección el químico de orina solo si hay parámetros con resultados fuera del valor de referencia, de lo contrario escribe "normal"]. El valor de "Hematíes" y "Leucos" debes extraerlo siempre del Sedimento de Orina (corresponderá a hematíes o globulos rojos y leucocitos o glóbulos blancos, depende del laboratorio, y siempre será un "rango", que debes copiar tal como se reporte independiente del valor de referencia para estos parámetros puntuales). El resto del examen de orina (tanto químico como sedimento) deberías reportarlo abajo junto con los "otros exámenes".
 
 Reglas críticas de transformación para el Hemograma:
 - Para GB y Plaq multiplica el valor base por 10^3 para mostrar el número completo y termínalo en /mm3 (Ej: si dice 7.01 con unidad x10^3, pon 7.010 /mm3; si dice 305, pon 305.000 /mm3). Si el valor original llevaba asterisco, mantenlo (Ej: * 7.010 /mm3).
