@@ -55,11 +55,11 @@ Estructura estricta del reporte principal:
 - Albúmina:[Valor]
 - INR: [Valor]
 - Hemograma: Hto: [X]%, Hb: [Y] g/dL, VCM: [Z] fL, HCM: [W] pg, GB: [Valor transformado] /mm3, Plaq: [Valor transformado] /mm3
-- Orina: SO: Leuco [Valor], Hematíes [Valor]. Debes reportar el químico solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). Si todo el sedimento y químico de orina es normal o negativo, pon "normal".
+- Orina: SO: Leuco [Valor], Hematíes [Valor]. Debes reportar en esta sección el químico de orina solo si hay alteraciones (ej: Glucosa, Nitritos o Cuerpos cetónicos positivos). El resto del examen de orina (químico y sedimento) debería reportarse abajo junto con el resto de los exámenes extra. Si todo el sedimento y químico de orina es normal o negativo, pon "normal" en esta sección y lo desglosas al final.
 - TSH: [Valor], T4L: [Valor]
 
 Reglas críticas de transformación para el Hemograma:
-- Para GB y Plaq multiplica el valor base por 10^3 para mostrar el número completo y termínalo en /mm3 (Ej: si dice 7.01 con unidad x10^3, pon 7.010 /mm3; si dice 305, pon 305.000 /mm3). Si el valor original llevaba asterisco, mantenlolo (Ej: * 7.010 /mm3).
+- Para GB y Plaq multiplica el valor base por 10^3 para mostrar el número completo y termínalo en /mm3 (Ej: si dice 7.01 con unidad x10^3, pon 7.010 /mm3; si dice 305, pon 305.000 /mm3). Si el valor original llevaba asterisco, mantenlo (Ej: * 7.010 /mm3).
 
 REDE DE SEGURIDAD PARA EXÁMENES ADICIONALES:
 - Es OBLIGATORIO que revises si existen más exámenes en el texto que NO estén incluidos en la lista de arriba (por ejemplo: Frotis, Fórmula leucocitaria detallada, parámetros específicos de orina alterados, PCR, Troponinas, Vitaminas, Cinética de hierro, Otroas Pruebas de coagulación como TP/% Actividad de Protrombina, etc.).
