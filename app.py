@@ -19,12 +19,14 @@ api_key = st.text_input(
 # --- SECCIÓN DE AYUDA (AHORA ABAJO COMO SOPORTE) ---
 with st.expander("ℹ️ ¿No tienes una Clave de API o no sabes cómo usar la herramienta?", expanded=False):
     st.markdown("""
-    Para que este extractor funcione, necesitas una **API Key** gratuita de Google. Esto asegura que los datos se procesen localmente de forma rápida y segura. Sigue estos pasos para obtener la tuya:
+    Para que este extractor funcione, necesitas una **Clave de API** gratuita de Google. Esto asegura que los datos se procesen localmente de forma rápida y segura. Sigue estos pasos para obtener la tuya:
     
     1. **Entra a la plataforma:** Ingresa a [Google AI Studio](https://aistudio.google.com/) con cualquier cuenta de Gmail común.
     2. **Genera el código:** Haz clic en el botón de arriba a la izquierda que dice **"Crear clave de API"**. Se desplegará una ventana donde podrás dar un nombre a la clave y elegir proyecto. Selecciona **+ Crear proyecto.** Dale un nombre y luego selecciona **Crear clave.**
     3. **Copia y pega:** Copia esa cadena larga de letras y números, pégala en la casilla visible de arriba y da ENTER.
     4. **Carga o arrastra** el documento en PDF y el procesamiento se hará automáticamente.
+
+    **Sólo tendrás que crear la Clave de API de Google una vez. Luego, deberás ingresarla cuando empieces a usar la herramienta.**
     """)
 
 # Definición del Prompt Maestro Optimizado
